@@ -110,12 +110,12 @@
 
 2. 运行mvn package进行打包
 
-![1545804995204](../../../../../My%20Files/_DEV/Workspace/Sample/java-sample-spring-boot-junior/assets/1545804995204.png)
+![1545804995204](assets/1545804995204.png)
 
 3. 打包后会在target里面
 
-![1545805035064](../../../../../My%20Files/_DEV/Workspace/Sample/java-sample-spring-boot-junior/assets/1545805035064.png)
+![1545805035064](assets/1545805035064.png)
 
 4. 通过命令行可以直接启动
 
-![1545805059306](./)
+![1545805059306](assets/1545805059306.png)
