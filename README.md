@@ -47,3 +47,46 @@
 #### 3. Hello World
 
 ​	需求：基于maven创建一个Spring Boot的hello world程序。
+
+###### 3-1. 环境配置
+
+1. JDK： 1.8
+
+2. MAVEN： 3.5.4
+
+   需要设置~/.m2/settings.xml
+
+   1). 在mirrors中设置阿里云镜像
+
+   ```xml
+   <mirror>
+       <id>alimaven</id>
+       <name>aliyun maven</name>
+       <url>http://maven.aliyun.com/nexus/content/groups/public/</url>
+       <mirrorOf>central</mirrorOf>
+   </mirror>
+   ```
+
+   2). 在profiles标签中设置maven编译环境
+
+   ```xml
+   <!-- 这段设置告诉maven用1.8的jdk来编译 -->
+   <profile>
+       <id>jdk-1.8</id>
+       <activation>
+           <actionByDefault>true</actionByDefault>
+           <jdk>1.8</jdk>
+       </activation>
+       <properties>
+           <maven.compiler.source>1.8</maven.compiler.source>
+           <maven.compiler.target>1.8</maven.compiler.target>
+           <maven.compiler.compilerVersion>1.8</maven.compiler.compilerVersion>
+       </properties>
+   </profile>
+   ```
+
+3. 设置IDEA的maven环境
+
+   ![1545803362977](assets/1545803362977.png)
+
+
