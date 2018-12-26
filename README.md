@@ -48,7 +48,7 @@
 
 ​	需求：基于maven创建一个Spring Boot的hello world程序。
 
-###### 3-1. 环境配置
+##### 3-1. 环境配置
 
 1. JDK： 1.8
 
@@ -89,4 +89,33 @@
 
    ![1545803362977](assets/1545803362977.png)
 
+##### 3-2. 创建spring boot
 
+详情参考： **demo-01-hello**
+
+3-3. 发布spring boot
+
+1. 根据官方文档，创建一个可执行的jar包。需要将下面配置写入pom.xml
+
+   ``` xml
+   <build>
+       <plugins>
+           <plugin>
+               <groupId>org.springframework.boot</groupId>
+               <artifactId>spring-boot-maven-plugin</artifactId>
+           </plugin>
+       </plugins>
+   </build>
+   ```
+
+2. 运行mvn package进行打包
+
+![1545804995204](../../../../../My%20Files/_DEV/Workspace/Sample/java-sample-spring-boot-junior/assets/1545804995204.png)
+
+3. 打包后会在target里面
+
+![1545805035064](../../../../../My%20Files/_DEV/Workspace/Sample/java-sample-spring-boot-junior/assets/1545805035064.png)
+
+4. 通过命令行可以直接启动
+
+![1545805059306](./)
